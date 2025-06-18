@@ -5,9 +5,12 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import static LogsAndReports.Logs.Log;
 
-import jdk.internal.org.jline.utils.Log;
+//import jdk.internal.org.jline.utils.Log;
 import utils.Xpath;
 
 public class CreateAccountPage extends BasePage {
@@ -23,13 +26,19 @@ public class CreateAccountPage extends BasePage {
         
     }
     
-    public CreateAccountPage open_login_page() {
-    	driver.get(prop.getProperty("url"));
+    public CreateAccountPage open_sign_up_page() {
+    	Log.info("function_name---------------------->" +new Object(){}.getClass().getEnclosingMethod().getName());
+    	driver.get(prop.getProperty("sign_up_url"));
     	return this;
     	
     }
     public CreateAccountPage click_Create_an_account() {
+    	Log.info("function_name---------------------->" +new Object(){}.getClass().getEnclosingMethod().getName());
+    	 wait.until((ExpectedCondition<Boolean>) wd ->
+         ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete")
+     );
     	e_click(Xpath.create_an_account_page,"create an account");
+    	
     	return this;
     	
     }
@@ -63,6 +72,15 @@ public class CreateAccountPage extends BasePage {
     	e_click(Xpath.create_an_account_button,"create an account");
     	return this;
     }
+    
+    public CreateAccountPage sign_out() {
+    	Log.info("function_name---------------------->" +new Object(){}.getClass().getEnclosingMethod().getName());
+    	e_click(Xpath.dropdown,"drop_down");
+    	e_click(Xpath.Sign_out,"sign_out");
+    	
+    	return this;
+    }
+    
     
  
 }

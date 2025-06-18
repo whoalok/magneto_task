@@ -19,7 +19,7 @@ public class createAccount extends BasePage {
 	
 	@Given("I am on the Magento home page")
 	public void i_am_on_the_magento_home_page() {
-		CAP.open_login_page();
+		CAP.open_sign_up_page();
 		
 	  
 	    
@@ -28,7 +28,7 @@ public class createAccount extends BasePage {
 	@When("I navigate to the Create New Customer Account page")
 	public void i_navigate_to_the_create_new_customer_account_page() {
 		
-		CAP.click_Create_an_account();
+//		CAP.click_Create_an_account();
 	 
 	   
 	}
@@ -46,6 +46,7 @@ public class createAccount extends BasePage {
 
 	@Then("I should see a success message")
 	public void i_should_see_a_success_message() {
+		CAP.sign_out();
 	    
 	}
 
