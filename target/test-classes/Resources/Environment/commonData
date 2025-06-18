@@ -1,7 +1,7 @@
 sign_up_url = https://magento.softwaretestingboard.com/customer/account/create/
 firstname = alok 
 lastname = kumar
-email = alok116@gmail.com
+email = alok118@gmail.com
 password = Drums@12345
 confirm_password = Drums@12345
 sign_in_url = https://magento.softwaretestingboard.com/customer/account/login/

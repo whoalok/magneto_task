@@ -1,0 +1,16 @@
+pages\BasePage.class
+pages\CreateAccountPage$5.class
+utils\Xpath.class
+pages\CreateAccountPage.class
+pages\SignInPage.class
+config\Config.class
+pages\CreateAccountPage$7.class
+pages\CreateAccountPage$6.class
+LogsAndReports\Logs.class
+pages\CreateAccountPage$2.class
+pages\CreateAccountPage$8.class
+pages\CreateAccountPage$1.class
+pages\CreateAccountPage$3.class
+pages\CreateAccountPage$9.class
+com\automation\magneto_assessment\App.class
+pages\CreateAccountPage$4.class

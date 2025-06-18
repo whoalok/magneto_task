@@ -13,7 +13,7 @@ import static LogsAndReports.Logs.Log;
 //import jdk.internal.org.jline.utils.Log;
 import utils.Xpath;
 
-public class CreateAccountPage extends BasePage {
+public class CreateAccountPage extends BasePage { 
 	
 	FileReader reader;
 	Properties prop;

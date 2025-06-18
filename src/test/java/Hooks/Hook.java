@@ -9,6 +9,8 @@ import java.util.Properties;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.Before;
+import io.cucumber.java.After;
+
 import pages.BasePage;
 
 public class Hook extends BasePage {
@@ -33,4 +35,10 @@ public void init() {
 	
 	
 }
+//@After
+//public void tearDown() {
+//    if (driver != null) {
+//        driver.quit();
+//    }
 }
+
