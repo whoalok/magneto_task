@@ -7,18 +7,9 @@
 //import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.firefox.FirefoxOptions;
-//
-//import config.Config;
-//
+
 //public class WebDriverSetup {
 //    public static WebDriver driver;
-//
-//    /**
-//     * Initializes and returns a WebDriver instance based on the browser specified in Config.
-//     * Uses WebDriverManager to handle driver binaries automatically.
-//     *
-//     * @return Initialized WebDriver instance.
-//     */
 //    public static WebDriver getDriver() {
 //        if (driver == null) {
 //            String browser = Config.BROWSER.toLowerCase();
@@ -30,13 +21,6 @@
 //                    // Optional: chromeOptions.addArguments("--headless"); // Run in headless mode
 //                    driver = new ChromeDriver(chromeOptions);
 //                    break;
-//                case "firefox":
-//                    WebDriverManager.firefoxdriver().setup();
-//                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-//                    firefoxOptions.addArguments("--start-maximized");
-//                    // Optional: firefoxOptions.addArguments("--headless"); // Run in headless mode
-//                    driver = new FirefoxDriver(firefoxOptions);
-//                    break;
 //                default:
 //                    throw new IllegalArgumentException("Unsupported browser: " + browser);
 //            }
@@ -44,10 +28,6 @@
 //        }
 //        return driver;
 //    }
-//
-//    /**
-//     * Quits the WebDriver instance if it's not null.
-//     */
 //    public static void quitDriver() {
 //        if (driver != null) {
 //            driver.quit();
